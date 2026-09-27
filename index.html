@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fieldnotes: a collection of landscapes, visual stories and small observations from the road."
+    />
+    <title>Fieldnotes — A visual travel journal</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Task 0: Flexbox aligns the wordmark and navigation. -->
+    <header class="site-header" id="navigation">
+      <a class="wordmark" href="index.html" aria-label="Fieldnotes home"
+        >fieldnotes<span class="logo-dot">.</span></a
+      >
+      <nav aria-label="Main navigation" class="site-nav">
+        <a href="index.html" aria-current="page">Discover</a>
+        <a href="journal.html">Journal</a>
+        <a href="#gallery">Gallery</a>
+        <a href="portfolio.html"
+          >Portfolio <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main id="main" class="home-main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="small-line"></span> A visual travel journal
+          </p>
+          <h1 id="hero-title">Take the<br /><em>scenic route.</em></h1>
+          <p class="hero-description">
+            Quiet landscapes. Unfamiliar streets. A collection of places worth
+            slowing down for.
+          </p>
+          <a class="text-link" href="#stories"
+            >Explore the collection <span aria-hidden="true">↘</span></a
+          >
+          <p class="edition">COLLECTION 01 <span> / </span> OUT IN THE OPEN</p>
+        </div>
+        <figure class="hero-image">
+          <img
+            src="assets/images/07-lake.jpg"
+            alt="A mountain reflected in a clear lake"
+            width="1200"
+            height="900"
+            fetchpriority="high"
+          />
+          <figcaption>
+            <span>07 / Highland reflections</span
+            ><span>FIELDNOTES COLLECTION</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Task 1: The row and each equal-height card use Flexbox. -->
+      <section
+        class="section-block"
+        id="stories"
+        aria-labelledby="stories-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A change of scenery</p>
+            <h2 id="stories-title">Three ways to wander.</h2>
+          </div>
+          <span class="section-number">01 — 03</span>
+        </div>
+        <div class="card-row">
+          <article class="story-card">
+            <div class="card-image">
+              <img
+                src="assets/images/01-mountains.jpg"
+                alt="Mountain landscape"
+                width="1200"
+                height="900"
+                loading="lazy"
+              /><span class="image-number">01</span>
+            </div>
+            <div class="card-content">
+              <p class="eyebrow">Higher ground</p>
+              <h3>Into the mountains</h3>
+              <p>
+                Follow the ridgeline. Look for the small details that give a
+                vast landscape its scale.
+              </p>
+              <button
+                class="text-link"
+                type="button"
+                data-photo="assets/images/01-mountains.jpg"
+                data-title="Into the mountains"
+                data-caption="A study of scale: strong ridgelines, open sky and the distance between them."
+              >
+                View fieldnote <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="card-image">
+              <img
+                src="assets/images/02-coast.jpg"
+                alt="Coastal landscape beside the sea"
+                width="1200"
+                height="900"
+                loading="lazy"
+              /><span class="image-number">02</span>
+            </div>
+            <div class="card-content">
+              <p class="eyebrow">By the water</p>
+              <h3>Along the coastline</h3>
+              <p>
+                An open horizon and a slower rhythm. A closer look at the
+                meeting point of land and sea.
+              </p>
+              <button
+                class="text-link"
+                type="button"
+                data-photo="assets/images/02-coast.jpg"
+                data-title="Along the coastline"
+                data-caption="An exercise in simplicity: the shoreline leads the eye through the frame while the water leaves room to breathe."
+              >
+                View fieldnote <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="card-image">
+              <img
+                src="assets/images/03-city.jpg"
+                alt="Buildings and lines in a city scene"
+                width="1200"
+                height="900"
+                loading="lazy"
+              /><span class="image-number">03</span>
+            </div>
+            <div class="card-content">
+              <p class="eyebrow">Between buildings</p>
+              <h3>The city, on foot</h3>
+              <p>
+                Trade a fixed itinerary for a few unexpected turns. Find the
+                shapes hiding in everyday streets.
+              </p>
+              <button
+                class="text-link"
+                type="button"
+                data-photo="assets/images/03-city.jpg"
+                data-title="The city, on foot"
+                data-caption="Architecture becomes a composition of lines and repeated shapes. Notice where the light breaks the pattern."
+              >
+                View fieldnote <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Task 3: Nine images in equal-width Grid columns and equal-height rows. -->
+      <section
+        class="section-block gallery-section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The contact sheet</p>
+            <h2 id="gallery-title">Places, in nine frames.</h2>
+          </div>
+          <p class="section-note">
+            A small collection of different perspectives.<br />Select a
+            photograph for a closer look.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/01-mountains.jpg"
+            data-title="01 — Higher ground"
+            data-caption="Mountains and open space."
+            aria-label="Open Higher ground photograph"
+          >
+            <img
+              src="assets/images/01-mountains.jpg"
+              alt="Mountain landscape"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>01 / Higher ground</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/02-coast.jpg"
+            data-title="02 — A coastal pause"
+            data-caption="The edge between land and sea."
+            aria-label="Open A coastal pause photograph"
+          >
+            <img
+              src="assets/images/02-coast.jpg"
+              alt="Sea along a coastline"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>02 / A coastal pause</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/03-city.jpg"
+            data-title="03 — Urban lines"
+            data-caption="A closer look at the built environment."
+            aria-label="Open Urban lines photograph"
+          >
+            <img
+              src="assets/images/03-city.jpg"
+              alt="City architecture"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>03 / Urban lines</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/04-forest.jpg"
+            data-title="04 — A quieter place"
+            data-caption="A landscape shaped by trees."
+            aria-label="Open A quieter place photograph"
+          >
+            <img
+              src="assets/images/04-forest.jpg"
+              alt="Trees in a forest"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>04 / A quieter place</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/05-desert.jpg"
+            data-title="05 — Lines in the sand"
+            data-caption="Texture, light and an open landscape."
+            aria-label="Open Lines in the sand photograph"
+          >
+            <img
+              src="assets/images/05-desert.jpg"
+              alt="Sandy desert landscape"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>05 / Lines in the sand</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/06-road.jpg"
+            data-title="06 — The long way"
+            data-caption="A route through the landscape."
+            aria-label="Open The long way photograph"
+          >
+            <img
+              src="assets/images/06-road.jpg"
+              alt="Road stretching into the landscape"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>06 / The long way</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/07-lake.jpg"
+            data-title="07 — Still water"
+            data-caption="A moment beside the water."
+            aria-label="Open Still water photograph"
+          >
+            <img
+              src="assets/images/07-lake.jpg"
+              alt="A lake and its surroundings"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>07 / Still water</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/08-snow.jpg"
+            data-title="08 — After dark"
+            data-caption="Snowy peaks under a starry sky."
+            aria-label="Open After dark photograph"
+          >
+            <img
+              src="assets/images/08-snow.jpg"
+              alt="Snow-covered landscape"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>08 / After dark</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+          <button
+            class="gallery-item"
+            type="button"
+            data-photo="assets/images/09-field.jpg"
+            data-title="09 — Open country"
+            data-caption="Space, texture and the shape of the land."
+            aria-label="Open Open country photograph"
+          >
+            <img
+              src="assets/images/09-field.jpg"
+              alt="Open countryside"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="gallery-caption"
+              ><span>09 / Open country</span
+              ><span aria-hidden="true">↗</span></span
+            >
+          </button>
+        </div>
+        <p class="image-credit">
+          A curated study collection. Original photographers and image sources
+          are listed in <a href="CREDITS.md">the photo credits</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="index.html"
+        >fieldnotes<span class="logo-dot">.</span></a
+      >
+      <p>A collection of places & perspectives.</p>
+      <a href="#navigation">Back to top ↑</a>
+    </footer>
+    <dialog class="photo-dialog" aria-labelledby="photo-title">
+      <button class="dialog-close" type="button" aria-label="Close photograph">
+        Close <span aria-hidden="true">×</span></button
+      ><img class="dialog-image" src="assets/images/01-mountains.jpg" alt="" />
+      <div class="dialog-copy">
+        <h2 id="photo-title"></h2>
+        <p id="photo-caption"></p>
+      </div>
+    </dialog>
+  </body>
+</html>

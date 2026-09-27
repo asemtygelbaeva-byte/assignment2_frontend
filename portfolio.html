@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assem Tugelbay's Fieldnotes project: three visual collections and a student portfolio."
+    />
+    <title>Portfolio — Fieldnotes</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="navigation">
+      <a class="wordmark" href="index.html" aria-label="Fieldnotes home"
+        >fieldnotes<span class="logo-dot">.</span></a
+      >
+      <nav aria-label="Main navigation" class="site-nav">
+        <a href="index.html">Discover</a><a href="journal.html">Journal</a
+        ><a href="index.html#gallery">Gallery</a
+        ><a href="portfolio.html" aria-current="page"
+          >Portfolio <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main class="portfolio-main" id="main">
+      <div class="portfolio-intro">
+        <p class="eyebrow">The person behind the page</p>
+        <h1>Curiosity, <em>collected.</em></h1>
+        <p>
+          A student web project about landscapes, visual stories and making room
+          for the details.
+        </p>
+      </div>
+      <!-- Task 4: Grid places the projects left and profile right. -->
+      <div class="portfolio-layout">
+        <section aria-labelledby="projects-title">
+          <div class="projects-heading">
+            <h2 id="projects-title">Selected collections</h2>
+            <span>01 — 03</span>
+          </div>
+          <div class="project-list">
+            <!-- Flexbox arranges the image, content and button inside each project. -->
+            <article class="project-card">
+              <img
+                src="assets/images/07-lake.jpg"
+                alt="Mountain reflections on a lake"
+                width="1400"
+                height="933"
+              />
+              <div class="project-content">
+                <p class="eyebrow">01 / Landscape study</p>
+                <h3>Highland reflections</h3>
+                <p>
+                  A composition built around still water, a strong mountain
+                  silhouette and natural symmetry.
+                </p>
+                <button
+                  class="text-link"
+                  type="button"
+                  data-photo="assets/images/07-lake.jpg"
+                  data-title="Highland reflections"
+                  data-caption="Collection 01 explores balance. The reflected mountain gives the image two focal points, separated by a narrow line of trees."
+                >
+                  Explore collection <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                src="assets/images/03-city.jpg"
+                alt="Repeating windows and decorative facades on a city street"
+                width="1400"
+                height="937"
+                loading="lazy"
+              />
+              <div class="project-content">
+                <p class="eyebrow">02 / Architecture study</p>
+                <h3>A rhythm of windows</h3>
+                <p>
+                  Repeated shapes turn an ordinary street into a study of
+                  pattern, perspective and scale.
+                </p>
+                <button
+                  class="text-link"
+                  type="button"
+                  data-photo="assets/images/03-city.jpg"
+                  data-title="A rhythm of windows"
+                  data-caption="Collection 02 looks at repetition. The facades guide the eye along the street, and differences in detail interrupt the rhythm."
+                >
+                  Explore collection <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                src="assets/images/05-desert.jpg"
+                alt="Soft pale dunes against a clear sky"
+                width="1400"
+                height="934"
+                loading="lazy"
+              />
+              <div class="project-content">
+                <p class="eyebrow">03 / Minimal landscape</p>
+                <h3>Room to breathe</h3>
+                <p>
+                  Soft curves and a restrained colour palette. A small study of
+                  how empty space can shape an image.
+                </p>
+                <button
+                  class="text-link"
+                  type="button"
+                  data-photo="assets/images/05-desert.jpg"
+                  data-title="Room to breathe"
+                  data-caption="Collection 03 reduces the scene to a few forms. The pale dunes and quiet sky leave the curve of the sand as the main subject."
+                >
+                  Explore collection <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <aside aria-label="About the student">
+          <div class="profile-card">
+            <div class="profile-monogram" aria-hidden="true">at.</div>
+            <h2>Assem<br />Tugelbay</h2>
+            <p>
+              Software engineering student, exploring web design through a
+              visual travel journal.
+            </p>
+            <dl class="profile-details">
+              <div>
+                <dt>Group</dt>
+                <dd>SE-2540</dd>
+              </div>
+              <div>
+                <dt>Project</dt>
+                <dd>Fieldnotes</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Layout & visual storytelling</dd>
+              </div>
+            </dl>
+            <a class="text-link" href="journal.html"
+              >Read the journal <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p class="profile-note">
+            A curated photography collection for a student project. Images
+            belong to their credited photographers.
+            <a href="CREDITS.md">Photo credits ↗</a>
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="index.html"
+        >fieldnotes<span class="logo-dot">.</span></a
+      >
+      <p>Assem Tugelbay · SE-2540</p>
+      <a href="#navigation">Back to top ↑</a>
+    </footer>
+    <dialog class="photo-dialog" aria-labelledby="photo-title">
+      <button class="dialog-close" type="button" aria-label="Close photograph">
+        Close <span aria-hidden="true">×</span></button
+      ><img class="dialog-image" src="assets/images/07-lake.jpg" alt="" />
+      <div class="dialog-copy">
+        <h2 id="photo-title"></h2>
+        <p id="photo-caption"></p>
+      </div>
+    </dialog>
+  </body>
+</html>
