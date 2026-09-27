@@ -1,5 +1,7 @@
 # Fieldnotes — Advanced CSS
 
+**Live website:** [Open Fieldnotes](https://asemtygelbaeva-byte.github.io/assignment2_frontend/)
+
 **Student:** Assem Tugelbay  
 **Group:** SE-2540  
 **Assignment:** #2 — Advanced CSS (Flexbox & Grid)
@@ -7,18 +9,6 @@
 **Repository:** [asemtygelbaeva-byte/assignment2_frontend](https://github.com/asemtygelbaeva-byte/assignment2_frontend)
 
 Fieldnotes is a small travel journal with a photo collection, an article page and a portfolio. The pages share the same navigation, colours and typography. The project uses plain HTML, CSS and a short JavaScript file for the photo viewer. No CSS frameworks, external fonts or build tools are required to run it.
-
-## Run the project
-
-Download the project, extract it and open **index.html** in a modern browser. All photographs are stored locally, so the website also works offline.
-
-For a local web server, open a terminal in this folder and run:
-
-```sh
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`. On Windows, `py -m http.server 8000` can be used instead.
 
 ## Part 1 — Flexbox
 
